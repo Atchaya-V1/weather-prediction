@@ -19,18 +19,18 @@ A simple and modern weather prediction web app that fetches real-time weather da
 
 ---
 
-## 📁 Project Structure
+## 📌 Future Enhancements
+ Add weather icons or emojis for better visualization
 
-weather-app/
-│
-├── index.html          # Main HTML file (UI layout and elements)
-├── style.css           # All your custom CSS styles (modern + weather-based)
-├── script.js           # JavaScript file (handles API fetch & dynamic updates)
-├── README.md           # Project documentation (instructions & overview)
-└── assets/             # (Optional) Folder for images, icons, or animations
+ Show temperature, humidity, and pressure
 
+ Add loading animation while fetching data
 
----
+ Display country flag and local time
+
+ Add responsive mobile-first design
+
+ Integrate voice input or auto-suggestions
 
 ## 🔧 Setup Instructions
 
@@ -38,3 +38,10 @@ weather-app/
    
    git clone https://github.com/Atchaya-V1/weather-app.git
    cd weather-app
+
+
+  ## 📄 License
+This project is licensed under the MIT License.
+Feel free to use, modify, and share.
+
+
