@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <style>
+         
+  * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background: linear-gradient(135deg, #e27f1c, #01121e);
+    margin: 0;
+    padding: 80px 20px;
+    color: #00ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+
+  #weather {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  #input::placeholder {
+    color: rgba(14, 1, 1, 0.7);
+  }
+  #input {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    width: 250px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+
+  #input:focus {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  }
+
+  #butto {
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  #butto:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  #divi {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+
+  #show {
+    display: none;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 30px;
+    width: 85%;
+    max-width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+    line-height: 1.6;
+    white-space: pre-line;
+    text-align: left;
+    animation: fadeIn 0.4s ease-in-out forwards;
+  }
+
+  #show.show-visible {
+    display: block;
+    opacity: 3;
+  }
+  @keyframes fadeIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }}
+  @media (max-width: 600px) {
+    #input,
+    #butto {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    .input-group {
+      flex-direction: column;
+      gap: 12px;
+    }
+    #show {
+      font-size: 15px;
+    }
+    #input::placeholder {
+  color: rgba(19, 2, 2, 0.7);
+}
+    #divi {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
+        
+    </head>
+    <body>
+        <h1 id="weather">🌤️ WEATHER PREDICTION</h1>
+        <input id="input"type="text"placeholder="Type your city">
+        <button onclick="process()" id="butto">search</button>
+        <div id="divi" >
+        <p id="show"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
