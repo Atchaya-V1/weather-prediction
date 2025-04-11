@@ -11,13 +11,16 @@ A simple and modern weather prediction web app that fetches real-time weather da
 - 💡 Dynamic weather display (visibility, wind, cloud info)
 - ⚠️ Basic error handling (e.g., empty or invalid input)
 
-## 🖼️ Preview
+
+
 
 ## 🌐 Live Demo
 
 [Click here to view the live app](https://weather-prediction-mauve.vercel.app/)
 
 ---
+
+
 
 ## 📌 Future Enhancements
  Add weather icons or emojis for better visualization
@@ -32,12 +35,16 @@ A simple and modern weather prediction web app that fetches real-time weather da
 
  Integrate voice input or auto-suggestions
 
+
+
 ## 🔧 Setup Instructions
 
 1. **Clone the Repository** (or download as ZIP):
    
    git clone https://github.com/Atchaya-V1/weather-app.git
    cd weather-app
+
+
 
 
   ## 📄 License
